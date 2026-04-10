@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabalpur Hospital | Caring for Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span class="plus">+</span> Jabalpur Hospital
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#appointment" class="btn-appointment">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1>Your Health, Our Priority</h1>
+                <p>Welcome to Jabalpur Hospital, providing world-class healthcare with a personal touch. Located near GGITS College, Jabalpur, we are dedicated to serving our community with excellence.</p>
+                <div class="hero-btns">
+                    <a href="#appointment" class="btn-primary">Get Appointment</a>
+                    <a href="#services" class="btn-secondary">View Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Jabalpur Hospital is a leading healthcare institution committed to providing compassionate care and advanced medical treatments. Our team of experienced doctors and staff work tirelessly to ensure the well-being of every patient.</p>
+                    <p>We pride ourselves on our state-of-the-art facilities and a patient-centric approach that makes us a trusted name in the region.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>24/7</h3>
+                        <p>Emergency Care</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>50+</h3>
+                        <p>Specialist Doctors</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>1000+</h3>
+                        <p>Satisfied Patients</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Our Specialized Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Cardiology</h3>
+                        <p>Expert care for your heart, from routine checkups to advanced treatments.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-stethoscope"></i>
+                        <h3>General Medicine</h3>
+                        <p>Comprehensive primary care for patients of all ages.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-baby"></i>
+                        <h3>Pediatrics</h3>
+                        <p>Specialized medical care for infants, children, and adolescents.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-ambulance"></i>
+                        <h3>Emergency Care</h3>
+                        <p>Rapid response and life-saving care available 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointment" class="appointment container">
+            <div class="appointment-form-container">
+                <h2>Book an Appointment</h2>
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" required>
+                            <option value="">Select Service</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="general">General Medicine</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="emergency">Emergency</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="date" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Confirm Appointment</button>
+                </form>
+                <div id="formSuccess" class="success-message hidden">
+                    Appointment request sent! We will contact you soon.
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:6268385870">6268385870</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Near GGITS College, Jabalpur, MP</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <p>Google Maps Integration for Jabalpur Location</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Jabalpur Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

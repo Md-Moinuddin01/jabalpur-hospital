@@ -1,0 +1,351 @@
+/* General Styles */
+:root {
+    --primary: #2b70e4;
+    --primary-dark: #1c52b5;
+    --secondary: #6c757d;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --white: #ffffff;
+    --success: #28a745;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header & Nav */
+header {
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.plus {
+    color: #e74c3c;
+    font-size: 1.8rem;
+    margin-right: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.btn-appointment {
+    background: var(--primary);
+    color: var(--white) !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.btn-appointment:hover {
+    background: var(--primary-dark);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background: var(--light);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+/* Services Section */
+.services {
+    background: var(--light);
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+/* Appointment Form */
+.appointment {
+    padding: 80px 0;
+}
+
+.appointment-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.appointment-form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-submit:hover {
+    background: var(--primary-dark);
+}
+
+.success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.contact-info i {
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.map-placeholder {
+    background: #eee;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: var(--white);
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-stats {
+        margin-top: 30px;
+    }
+}
